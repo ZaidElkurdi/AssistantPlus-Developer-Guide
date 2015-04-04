@@ -1,0 +1,9 @@
+Package: com.assistantplus.spotifycontrols
+Name: spotifySiriControls
+Depends: mobilesubstrate, com.zaid.assistant+
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Control Spotify using Siri! Currently spotifySiriControls supports searching for tracks, artists, and albums using commands like, “Search for Drake on Spotify”, “Search Taylor Swift on Spotify”, “Play Books by Swiss Lips on Spotify”, and “Play Paris on Spotify”.
+Maintainer: Zaid Elkurdi
+Author: Zaid Elkurdi
+Section: Tweaks
