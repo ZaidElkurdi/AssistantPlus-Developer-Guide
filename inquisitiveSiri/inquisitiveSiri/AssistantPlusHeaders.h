@@ -13,10 +13,10 @@
 @protocol APSiriSession <NSObject>
 /* Send a simple text snippet that Siri will read.
  
- temporary: If true then the snippet will be replaced by the next view sent to the session.
- For this to function properly the dialogPhase should be "Reflection"
- scrollToTop: If true the Siri UI will be scrolled down so that the new view is at the top.
- dialogPhase: Possible values are  Completion, Reflection, Summary, Error, Clarification, and Acknowledgement */
+   temporary: If true then the snippet will be replaced by the next view sent to the session.
+              For this to function properly the dialogPhase should be "Reflection"
+   scrollToTop: If true the Siri UI will be scrolled down so that the new view is at the top.
+   dialogPhase: Possible values are  Completion, Reflection, Summary, Error, Clarification, and Acknowledgement */
 - (void)sendTextSnippet:(NSString*)text temporary:(BOOL)temporary scrollToTop:(BOOL)toTop dialogPhase:(NSString*)phase;
 
 /* Send a simple text snippet that Siri will read and optionally get the user's response
@@ -24,7 +24,7 @@
  temporary: If true then the snippet will be replaced by the next view sent to the session.
  For this to function properly the dialogPhase should be "Reflection"
  scrollToTop: If true the Siri UI will be scrolled down so that the new view is at the top.
- dialogPhase: Possible values are  Completion, Reflection, Summary, Error, Clarification, and Acknowledgement
+ dialogPhase: Possible values are  Completion, Reflection, Summary, Error, Clarification, and Acknowledgement 
  listenAfterSpeaking: If true Siri will prompt the user for a resposne after speaking the text.
  Available as of version 1.2 */
 - (void)sendTextSnippet:(NSString*)text temporary:(BOOL)temporary scrollToTop:(BOOL)toTop dialogPhase:(NSString*)phase listenAfterSpeaking:(BOOL)listen;
@@ -40,7 +40,7 @@
 - (void)sendAddViews:(NSArray*)views dialogPhase:(NSString*)dialogPhase scrollToTop:(BOOL)toTop temporary:(BOOL)temporary;
 
 /* Create and immediately send a custom snippet with the specified properties. The snippet must
- have been registered with the plugin manager */
+   have been registered with the plugin manager */
 - (void)sendCustomSnippet:(NSString*)snippetClass withProperties:(NSDictionary*)props;
 
 /* Create an editable dictionary representing a custom snippet. In order to send this
@@ -55,18 +55,18 @@
  with the location info. The location info will be structured as follows:
  
  NSDictionary *dict = @{@"latitude" : NSNumber,
- @"longitude" : NSNumber,
- @"horizontalAccuracy" : NSNumber,
- @"verticalAccuracy" : NSNumber,
- @"speed" : NSNumber,
- @"course" : NSNumber,
- @"timestamp" : NSDate} */
+                        @"longitude" : NSNumber,
+                        @"horizontalAccuracy" : NSNumber,
+                        @"verticalAccuracy" : NSNumber,
+                        @"speed" : NSNumber,
+                        @"course" : NSNumber,
+                        @"timestamp" : NSDate} */
 - (void)getCurrentLocationWithCompletion:(void (^)(NSDictionary *locationInfo))completion;
 
 @end
 
 /* None of your classes should need to conform to this protocol, but you will use it to register
- your command and snippet classes when your principal class's (the one that conforms to APPlugin)
+  your command and snippet classes when your principal class's (the one that conforms to APPlugin)
  initWithSystem: method is called */
 @protocol APPluginManager <NSObject>
 @required

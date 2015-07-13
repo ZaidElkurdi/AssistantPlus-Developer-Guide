@@ -1,0 +1,9 @@
+Package: com.assistantplus.inquisitiveSiri
+Name: inquisitiveSiri
+Depends: mobilesubstrate, org.thebigboss.assistantplus
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Let Siri get to know you
+Maintainer: Zaid Elkurdi
+Author: Zaid Elkurdi
+Section: Tweaks

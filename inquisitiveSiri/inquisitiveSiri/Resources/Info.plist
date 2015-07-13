@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>APPluginName</key>
-	<string>Spotify Control</string>
+	<string>Inquisitive Siri</string>
 	<key>APPluginAuthor</key>
 	<string>Zaid Elkurdi</string>
 	<key>CFBundleName</key>
-	<string>spotifySiri</string>
+	<string>inquisitiveSiri</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.assistantplus.spotifySiri</string>
+	<string>com.assistantplus.inquisitiveSiri</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CFBundleDisplayName</key>
-	<string>SpotifySiri</string>
+	<string>InquisitiveSiri</string>
 	<key>MinimumOSVersion</key>
 	<string>5.0</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -27,7 +27,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>AppBundleID</key>
-	<string>com.assistantplus.spotifySiri</string>
+	<string>com.assistantplus.inquisitiveSiri</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -36,6 +36,6 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>NSPrincipalClass</key>
-	<string>spotifySiri</string>
+	<string>inquisitiveSiri</string>
 </dict>
 </plist>
