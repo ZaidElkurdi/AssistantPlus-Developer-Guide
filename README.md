@@ -8,7 +8,6 @@
 3. If you've returned YES, then you can start sending views to the current session, either your own custom snippets or the default text snippets.
 
 4. Once you're done you should call sendRequestCompleted on the current APSiriSession to end the request. If you don't do this the session could potentially timeout and Siri will give the user an error message.
-5. 
 
 
 ### Sending Views:
